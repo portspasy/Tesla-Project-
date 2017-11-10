@@ -171,15 +171,23 @@ body {
 /*shadow*/
 .drop-shadow-bottom {background-color: #fff;border-color: #fff;-webkit-box-shadow: 0 5px 15px rgba(0,0,0,0.25);-moz-box-shadow:    0 5px 15px rgba(0,0,0,0.25);box-shadow:         0 5px 15px rgba(0,0,0,0.25);z-index: 8;}
 
-
+/*************************************************
+01. General CSS
+*************************************************/
 body {
 	width: 100%;
+	height: 100%;
 	background-color: #4f6e71;
 }
 ul {
 	list-style-type: none;
 	padding: 0;
 }
+
+
+/*************************************************
+02. Tesla Section CSS
+*************************************************/
 .tesla {
 	background-image: url('../img/pricing-table-tesla-bg.png');
 	background-position: center center;
@@ -189,12 +197,11 @@ ul {
 	width:800px;
 	/* max-height: 600px; */
 	max-width: 100%;
-	margin: 35px auto;
+	margin: 45px auto 0;
 	box-shadow: 10px 10px 33px -1px rgba(0, 0, 0, 0.61);
 }
 .tesla .tesla-box {
 	width: 320px;
-	height: 430px;
 	max-width: 100%;
 	margin: 15px 35px;
 }
@@ -211,10 +218,12 @@ ul {
 }
 hr {
 	width: 28px;
-	height: 2px;   
+	margin-top: 8px;
+	border-top: 2px solid #eee;
 }
 .tesla-s hr {
 	border-color: #e9eaec;
+	/* border-color: #ea525c; */
 }
 .tesla-x hr {
 	border-color: #94979d;
@@ -229,7 +238,7 @@ hr {
 	margin-bottom: 15px;
 }
 .tesla .t-body ul li:last-child {
-	margin-bottom: 0;
+	margin-bottom: 20px;
 }
 .order-btn {
 	color: #fff;
@@ -253,6 +262,8 @@ hr {
 	font-size: 24px;
 	font-family: 'clear_sans_thinregular';
 	letter-spacing: 0;
+	margin-top: -3px;
+	margin-bottom: 18px;
 }
 .tesla .t-body p span {
 	font-family: 'clear_sans_mediumregular';
@@ -260,42 +271,49 @@ hr {
 }
 .tesla .tesla-s .t-head {
 	background-color: #f8f9f9;
-	padding: 30px 0 20px 0;
+	padding: 30px 0 22px 0;
 }
 .tesla .tesla-s .t-body {
 	background-color: #fff;
-	padding: 20px 0 30px 0;
+	padding: 23px 0 35px 0;
 }
 .tesla .tesla-x .t-head {
 	background-color: #656a72;
-	padding: 30px 0 20px 0;
+	padding: 30px 0 22px 0;
 }
 .tesla .tesla-x .t-body  {
 	background-color: rgba(115, 120, 125, 0.95);
-	padding: 20px 0 30px 0;
+	padding: 23px 0 35px 0;
 	
 }
 
 
 
+/*************************************************
+03. Media Queries CSS
+*************************************************/
 
-/*==========  Non-Mobile First Method  ==========*/
-/* Large Devices, Wide Screens */
-@media only screen and (max-width : 1200px) {  
-}
+	/*==========  Non-Mobile First Method  ==========*/
 
-/* Medium Devices, Desktops */
-@media only screen and (max-width : 992px) {
-}
+	/* Large Devices, Wide Screens */
+	@media only screen and (max-width : 1200px) {  
+	}
 
-/* Small Devices, Tablets */
-@media only screen and (max-width : 768px) {
-}
+	/* Medium Devices, Desktops */
+	@media only screen and (max-width : 992px) {
+	}
 
-/* Extra Small Devices, Phones */ 
-@media only screen and (max-width : 480px) {
-}
+	/* Small Devices, Tablets */
+	@media only screen and (max-width : 768px) {
+		.tesla-box {
+			box-shadow: 2px 4px 9px 0px rgba(0, 0, 0, 0.3);
+		}
+	}
 
-/* Custom, iPhone Retina */ 
-@media only screen and (max-width : 320px) { 
-}
+	/* Extra Small Devices, Phones */ 
+	@media only screen and (max-width : 480px) {
+	}
+
+	/* Custom, iPhone Retina */ 
+	@media only screen and (max-width : 320px) { 
+	}
